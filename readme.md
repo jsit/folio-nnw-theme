@@ -4,6 +4,6 @@ Based on [Broadsheet](https://github.com/stuartbreckenridge/NNWThemesBroadsheet)
 
 ## Installation
 
-1. Download the [https://github.com/jsit/folio-nnw-theme/releases/latest](latest release)
+1. Download the [latest release](https://github.com/jsit/folio-nnw-theme/releases/latest)
 2. Open the enclosed .nnwtheme in NetNewsWire
 
