@@ -23,9 +23,20 @@ body {
   word-wrap: break-word;
   margin-top: 20px;
   margin-bottom: 64px;
-  padding-left: calc(var(--favicon-size) + 2ch);
-  padding-right: calc(var(--favicon-size) + 2ch);
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: ui-serif, -apple-system;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding-left: calc(var(--favicon-size) + 2ch);
+    padding-right: calc(var(--favicon-size) + 2ch);
+  }
+
+  .byline {
+    margin-left: calc(var(--favicon-size) * -1 - 1ch);
+  }
 }
 
 a {
@@ -48,7 +59,6 @@ a {
 }
 
 .byline {
-  margin-left: calc(var(--favicon-size) * -1 - 1ch);
   color: var(--body-code-color);
   padding-top: 0.2em;
   padding-bottom: 0.2em;
