@@ -7,7 +7,7 @@
   --table-cell-border-color: lightgray;
 }
 
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --header-color: rgba(94, 158, 244, 1);
     --body-code-color: #b2b2b2;
@@ -158,7 +158,7 @@ pre {
   line-height: 1.4286;
 
   code {
-    letter-spacing: -.027em;
+    letter-spacing: -0.027em;
     font-size: 0.9375em;
   }
 }
@@ -182,7 +182,7 @@ overlap the table border, which looks bad.
     &[border="0"] {
       border-width: 0;
     }
-    
+
     table {
       margin-bottom: 0;
       border: none;
@@ -258,8 +258,8 @@ sub {
 }
 
 hr {
-  border: none; 
-  background-color: var(--table-cell-border-color); 
+  border: none;
+  background-color: var(--table-cell-border-color);
   height: 1px;
   margin-top: 1em;
 }
@@ -281,22 +281,22 @@ hr {
 blockquote {
   border-left: 1.5px solid color(srgb 0.947 0.947 0.947);
   margin: 1.5em 0;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 1em;
   color: color(srgb 0.383 0.383 0.383);
 
   & > blockquote {
     padding-left: 1em;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: 0;
+    padding-bottom: 0;
     font-style: italic;
   }
 
   & > :first-child {
-    margin-block-start: 0px;
+    margin-block-start: 0;
   }
 
   & > :last-child {
-    margin-block-end: 0px;
+    margin-block-end: 0;
   }
 }
 
@@ -373,7 +373,6 @@ p code {
 .newsfoot-footnote-popover {
   position: absolute;
   display: block;
-  padding: 0em 1em;
   margin: 1em;
   top: 0.75em;
   max-width: none;
@@ -403,7 +402,7 @@ p code {
   left: calc(50% - 0.5em);
   height: 1em !important;
   transform: rotate(45deg);
-  z-index:0;
+  z-index: 0;
   background: #fafafa;
   border: 1px solid #ccc;
 }
@@ -437,7 +436,7 @@ a.footnote {
   text-align: center;
   font-size: 0.8em;
   line-height: 1em;
-  position:relative;
+  position: relative;
   top: -0.1em;
 }
 
@@ -491,7 +490,6 @@ a.footnote:hover,
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
     word-break: break-word;
     hyphens: auto;
     -webkit-text-size-adjust: none;
@@ -500,13 +498,14 @@ a.footnote:hover,
   :root {
     color-scheme: light dark;
     font-size: [[font-size]]px;
+
     --secondary-accent-color: #000;
     --block-quote-border-color: rgba(8, 106, 238, 0.75);
   }
 
-  @media(prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     :root {
-      --secondary-accent-color: #ffffff;
+      --secondary-accent-color: #fff;
       --block-quote-border-color: rgba(94, 158, 244, 0.75);
     }
   }
@@ -559,14 +558,15 @@ a.footnote:hover,
 
   :root {
     color-scheme: light dark;
+
     --accent-color: #000;
     --block-quote-border-color: #000;
   }
 
-  @media(prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     :root {
-      --accent-color: #EEEEEE;
-      --block-quote-border-color: #EEEEEE;
+      --accent-color: #eee;
+      --block-quote-border-color: #eee;
     }
   }
 
@@ -576,7 +576,7 @@ a.footnote:hover,
   }
 }
 
-/*Block ads and junk*/
+/* Block ads and junk */
 
 iframe[src*="feedads"],
 iframe[src*="doubleclick"],
